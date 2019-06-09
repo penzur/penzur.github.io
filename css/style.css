@@ -78,7 +78,7 @@ a:hover {
 }
 
 .pad {
-  width: 648px;
+  max-width: 648px;
   padding: 32px;
 }
 

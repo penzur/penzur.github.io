@@ -1307,6 +1307,10 @@ footer:before {
 
 ul {
   margin-left: 2em;
+  margin-bottom: 2em;
+}
+ul > li {
+  margin-bottom: 1em;
 }
 ul > li > a {
   font-size: 1.1em;
@@ -1314,6 +1318,16 @@ ul > li > a {
 
 a:hover {
   color: darkblue;
+}
+
+quote {
+  padding: 16px;
+  margin-bottom: 2em;
+  color: #666666;
+  line-height: 1.5em;
+  margin-left: 2em;
+  border-left: 3px solid #CCCCCC;
+  display: block;
 }
 
 .sub {
@@ -1353,3 +1367,17 @@ a:hover {
   font-size: .9em;
 }
 
+.article {
+  max-width: 768px;
+}
+.article p {
+  font-size: 20px !important;
+}
+.article code {
+  padding: 2px 6px;
+  border: 1px solid gold;
+  border-radius: 3px;
+  margin: auto 3px;
+  background-color: lightyellow;
+  font-size: 16px !important;
+}

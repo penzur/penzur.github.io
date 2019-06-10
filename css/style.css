@@ -5,106 +5,6 @@
   outline: none;
 }
 
-body {
-  background-color: #FFFFFF;
-  font-size: 17px;
-  letter-spacing: 0.3px;
-}
-
-h1, h2, h3, h4, h5, p, br {
-  line-height: 1.5em;
-  margin-bottom: 20px;
-  opacity: 0.95;
-}
-
-pre {
-  padding: 24px 24px 24px;
-  margin-left: -120px;
-  line-height: 2em;
-  letter-spacing: 1px;
-  font-size: 16px;
-}
-
-a, a:visited, a:active {
-  color: blue;
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid blue;
-}
-
-header {
-  margin-bottom: 2em;
-}
-
-main {
-  margin-bottom: 5em;
-}
-
-footer {
-  padding-top: 1em;
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  bottom: 0;
-}
-footer:before {
-  content: '';
-  position: relative;
-  display: block;
-  top: -20px;
-  border-top: 1px solid #BBBBBB;
-  width: 128px;
-}
-
-
-ul {
-  margin-left: 2em;
-}
-ul > li > a {
-  font-size: 1.1em;
-}
-
-a:hover {
-  color: darkblue;
-}
-
-.sub {
-  opacity: 0.7;
-}
-.fade {
-  opacity: 0.3;
-}
-
-.pad {
-  padding: 32px;
-}
-
-.div {
-  display: inline-block;
-  padding: 0 2px;
-  opacity: 0.3;
-}
-
-.blue {
-  color: blue;
-}
-.blue.under {
-  border-bottom: 1px solid blue;
-}
-.red {
-  color: red;
-}
-.red.under {
-  border-bottom: 1px solid red;
-}
-
-.title {
-  line-height: .9em;
-}
-.title .sub {
-  font-size: .9em;
-}
-
 .cd-title {
   position: relative;
   height: 160px;
@@ -113,7 +13,18 @@ a:hover {
 }
 .cd-title h1 {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: normal;
+}
+@media only screen and (max-width: 380px) {
+  .cd-title {
+    line-height: 250px;
+  }
+  .cd-headline {
+    font-size: 32px !important;
+  }
+  pre {
+    font-size: 14px !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .cd-title {
@@ -156,7 +67,7 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-weight: 300;
+    font-weight: normal;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -836,7 +747,6 @@ xclip
 -------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
-  padding: .2em 0;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
@@ -852,10 +762,10 @@ xclip
   height: 100%;
   background-color: #aebcb9;
 }
-.cd-headline.clip b {
+.cd-headline.clip .block {
   opacity: 0;
 }
-.cd-headline.clip b.is-visible {
+.cd-headline.clip .block.is-visible {
   opacity: 1;
 }
 
@@ -1342,3 +1252,104 @@ xpush
     transform: translateX(100%);
   }
 }
+
+body {
+  background-color: #FFFFFF;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5, p, br {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+pre {
+  padding: 24px 24px 24px;
+  margin-left: -120px;
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+a, a:visited, a:active {
+  color: blue;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid blue;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+main {
+  margin-bottom: 5em;
+}
+
+footer {
+  padding-top: 1em;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+}
+footer:before {
+  content: '';
+  position: relative;
+  display: block;
+  top: -20px;
+  border-top: 1px solid #BBBBBB;
+  width: 128px;
+}
+
+
+ul {
+  margin-left: 2em;
+}
+ul > li > a {
+  font-size: 1.1em;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.sub {
+  opacity: 0.7;
+}
+.fade {
+  opacity: 0.3;
+}
+
+.pad {
+  padding: 32px;
+}
+
+.div {
+  display: inline-block;
+  padding: 0 2px;
+  opacity: 0.3;
+}
+
+.blue {
+  color: blue;
+}
+.blue.under {
+  border-bottom: 1px solid blue;
+}
+.red {
+  color: red;
+}
+.red.under {
+  border-bottom: 1px solid red;
+}
+
+.title {
+  line-height: .9em;
+}
+.title .sub {
+  font-size: .9em;
+}
+

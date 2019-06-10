@@ -23,10 +23,12 @@
 </head>
 <body class="pad">
     <header style="page-break-inside: avoid;">
-        <h1>e<span class="fade">/</span>p</h1>
+        <nav>
+            <a href="/" class="logo">e<span class="fade">/</span>p</a>
+        </nav>
     </header>
 
-    <main>
+    <main style="margin-top:100px;">
         <h2 class="cd-headline clip" style="font-weight:normal">
             <span class="fade">hey/</span>what's<span class="fade">/up?</span>
             <br/>
@@ -49,15 +51,15 @@
             )
 
             <span class="fade">// Let's connect</span>
-            socials := []Link{
+            links := []Link{
                 <a href="https://github.com/penzur">github</a>,
                 <a href="https://twitter.com/p3nzur">twitter</a>,
                 <a href="https://instagram.com/penzur">instagram</a>,
             }
 
             <span class="fade">// Random ramblings</span>
-            posts := map[date]Link{
-                2019.06.11: <a href="/p/login-prompt-with-bash-script"><strong>login prompt with bash script</strong></a>,
+            posts := map[date]Post{
+                "2019.06.11": <a href="/p/login-prompt-using-bash-script">login prompt using bash script</a>,
             }
         </pre>
     </main>

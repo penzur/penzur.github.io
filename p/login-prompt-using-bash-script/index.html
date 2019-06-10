@@ -12,17 +12,20 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Login Prompt with Bash Script" />
+    <meta property="og:title" content="Login Prompt Using Bash Script" />
     <meta property="og:description" content="Creating login prompt using bash script" />
-    <meta property="og:image" type="image/gif" content="/p/login-prompt-with-bash-script/bash-login.gif" />
+    <meta property="og:image" type="image/gif" content="/p/login-prompt-using-bash-script/bash-login.gif" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/icon.png" type="image/jpg" />
 
-    <title>Login Prompt with Bash Script</title>
+    <title>Login Prompt Using Bash Script</title>
 </head>
 <body class="pad">
-    <header>
-        <h1><a href="/">&lsaquo;</a> Login prompt with bash script</h1>
+    <header class="article-head">
+        <nav>
+            <a href="/" class="logo">e<span class="fade">/</span>p</a>
+        </nav>
+        <h1>Login Prompt Using Bash Script</h1>
         <p><code>2019.06.11</code></p>
     </header>
 
@@ -32,7 +35,7 @@
         </h2>
 
         <p>
-            <img width="100%" src="/p/login-prompt-with-bash-script/bash-login.gif" alt="bash">
+            <img width="100%" src="/p/login-prompt-using-bash-script/bash-login.gif" alt="bash">
         </p>
         <p>Pretty cool, huh?</p>
 
@@ -51,7 +54,7 @@
         <p>
             <strong>
                 1. Create a file called <code>login.bash</code>. And then copy
-                and paste the following code.
+                and paste the following code:
             </strong>
         </p>
         <pre>
@@ -64,14 +67,17 @@
             echo
             echo -e "Username: $username, Password: $password"
         </pre>
-        <quote>See the code breakdown below</quote>
 
         <p>
             <strong>
-                To run the script, you use dot notation like the following.
+                2. Hit save, and then run the script with the following command:
             </strong>
         </p>
-        <p><code>./login.bash</code><br/><br/><p>
+        <p><code>$ ./login.bash</code><br/><br/><p>
+        <quote>
+            The <code>$</code> sign is to indicate that the above command is
+            done inside a terminal window.
+        </quote>
 
         <h2>Code Breakdown</h2>
         <p>
@@ -95,7 +101,7 @@
             <br>
         </p>
 
-        <quote>That's it!</quote>
+        <p><strong>That's about it.</strong></p>
     </main>
 
     <footer>

@@ -1304,6 +1304,10 @@ a.logo:hover {
   box-shadow: 0 10px 20px 1px rgba(0,0,255, 0.5);
   transition: all .5s;
 }
+a.logo:hover .fade {
+  color: white !important;
+  opacity: 0.6;
+}
 
 header {
   margin-bottom: 2em;

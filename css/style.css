@@ -1295,14 +1295,15 @@ a.logo {
   background-color: #FFFFFF !important;
   top: 32px;
   z-index: 10;
-  transition: all .5s;
+  transition: all .3s;
   box-shadow: none;
 }
 a.logo:hover {
   background-color: blue !important;
   color: white;
   box-shadow: 0 10px 20px 1px rgba(0,0,255, 0.5);
-  transition: all .5s;
+  top: 28px;
+  transition: all .3s;
 }
 a.logo:hover .fade {
   color: white !important;

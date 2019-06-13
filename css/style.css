@@ -25,6 +25,13 @@
   pre {
     font-size: 14px !important;
   }
+  .btn {
+    padding: 5px 8px !important;
+    font-size: .9em;
+  }
+  ul > li > a {
+    font-size: 1em !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .cd-title {
@@ -1265,6 +1272,10 @@ h1, h2, h3, h4, h5, p, br {
   opacity: 0.95;
 }
 
+hr {
+  margin: 32px 0;
+}
+
 pre {
   padding-top: 32px;
   margin-left: -120px;
@@ -1343,7 +1354,7 @@ ul > li {
   margin-bottom: 1em;
 }
 ul > li > a {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 a:hover {
@@ -1422,4 +1433,32 @@ quote {
   margin-bottom: 32px;
   padding-left: 32px;
   background-color: #EFEFEF;
+}
+.btn, .btn:active {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  padding: 8px 24px;
+  border: 1px solid blue;
+  color: blue;
+  text-decoration: none;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  transition: all .3s;
+}
+.btn:hover {
+  background-color: blue;
+  color: white;
+  top: -3px;
+  box-shadow: 0 5px 10px rgba(0,0,255, 0.5);
+  transition: all .3s;
+}
+.btn.red {
+  color: red;
+  border-color: red;
+}
+.btn.red:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 5px 10px rgba(255,0,0,0.5);
 }

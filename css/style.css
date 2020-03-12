@@ -1326,6 +1326,7 @@ header {
 }
 
 main {
+  opacity: 0.8;
   margin-bottom: 5em;
 }
 
@@ -1351,7 +1352,7 @@ ul {
   margin-bottom: 2em;
 }
 ul > li {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 ul > li > a {
   font-size: 1.3em;
@@ -1474,4 +1475,21 @@ svg path {
 a:hover svg path {
   fill: white;
   transition: all .3s;
+}
+
+hr {
+  padding: 1px;
+  background-color: #efefef;
+}
+
+hr.cap {
+  width: 200px;
+}
+main p {
+  opacity: 0.75;
+  max-width: 512px;
+  font-family: monospace;
+}
+main h2 {
+  letter-spacing: 1.5px;
 }

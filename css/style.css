@@ -231,6 +231,7 @@ p {
   opacity: 0.75;
   max-width: 512px;
   font-family: monospace;
+  line-height: 1.7em;
 }
 main h2 {
   letter-spacing: 1.5px;

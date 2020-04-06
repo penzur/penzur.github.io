@@ -44,10 +44,15 @@ nav {
 }
 
 a, a:visited, a:active {
-  color: blue;
+  color: yellow;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px dashed yellow;
+}
+
+a:hover {
+  color: gold;
+  border-color: gold;
 }
 
 header {
@@ -98,11 +103,6 @@ ul > li {
   margin-bottom: 32px;
 }
 
-a:hover {
-  color: lightblue;
-  border-color: lightblue;
-}
-
 quote {
   padding: 16px;
   margin-bottom: 2em;
@@ -147,13 +147,13 @@ hr.cap {
 p {
   font-size: 64px;
   max-width: 960px;
-  line-height: 1.2em;
+  line-height: 88px;
   font-weight: 400;
-  color: #999;
+  color: white;
 }
 
 p em {
-  color: white;
+  color: cyan;
   border-bottom: 1px dashed #333;
 }
 
@@ -170,21 +170,46 @@ code {
   font-size: 32px;
 }
 
+.bigger {
+  font-size: 88px;
+  margin-bottom: 1em;
+}
+
+.arrow {
+  color: magenta;
+  font-size: 64px;
+}
+
 @media only screen and (max-width: 768px) {
   p {
     font-size: 34px;
     max-width: 700px;
+    line-height: 44px;
   }
   code {
     font-size: 20px;
   }
+
+  .bigger {
+    font-size: 44px;
+  }
+
+  .arrow {
+    font-size: 32px;
+  }
+
 }
 
 @media only screen and (max-width: 720px) {
   p {
     font-size: 24px;
   }
+
   code {
     font-size: 14px;
+  }
+
+  .bigger {
+    font-size: 32px;
   }
 }

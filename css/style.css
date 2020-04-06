@@ -5,9 +5,15 @@
   outline: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  background-color: #FFFFFF;
-  font-size: 17px;
+  background-color: #111;
+  font-family: 'victorian-orchid';
+  color: white;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,10 +29,6 @@ h1, h2, h3, h4, h5, p, br {
 }
 h1, h2 {
   letter-spacing: 1px;
-}
-
-hr {
-  margin: 32px 0;
 }
 
 pre {
@@ -48,37 +50,27 @@ a, a:visited, a:active {
   border-bottom: 1px solid blue;
 }
 
-a.logo {
-  font-size: 32px;
-  position: fixed;
-  display: block;
-  border: 1px solid blue;
-  padding: 16px;
-  color: blue;
-  font-weight: bold;
-  background-color: #FFFFFF !important;
-  top: 32px;
-  z-index: 10;
-  transition: all .3s;
-  box-shadow: none;
-}
-a.logo:hover {
-  background-color: blue !important;
-  color: white;
-  box-shadow: 0 10px 20px 1px rgba(0,0,255, 0.5);
-  top: 28px;
-  transition: all .3s;
-}
-a.logo:hover .fade {
-  color: white !important;
-}
-
 header {
   margin-bottom: 2em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 32px;
 }
 
 main {
-  margin-bottom: 5em;
+  height: 100%;
+  border: 16px solid blue;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -106,12 +98,10 @@ ul {
 ul > li {
   margin-bottom: 32px;
 }
-ul > li > a {
-  font-size: 1.3em;
-}
 
 a:hover {
-  color: darkblue;
+  color: lightblue;
+  border-color: lightblue;
 }
 
 quote {
@@ -133,7 +123,7 @@ quote {
 
 .pad {
   padding: 32px;
-}
+}64px auto 44px;
 
 .div {
   display: inline-block;
@@ -143,9 +133,6 @@ quote {
 .title {
   line-height: .9em;
 }
-.title .sub {
-  font-size: .9em;
-}
 
 hr {
   padding: 1px;
@@ -153,15 +140,55 @@ hr {
 }
 
 hr.cap {
+  margin: 44px auto;
   width: 200px;
+  opacity: 0.2;
 }
+
 p {
-  max-width: 512px;
-  font-family: courier, monospace;
-  line-height: 1.7em;
-  opacity: .9;
+  font-size: 64px;
+  max-width: 960px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #999;
+}
+
+p em {
+  color: white;
+  border-bottom: 1px dashed #333;
 }
 
 header, article, section {
   margin-bottom: 54px;
+}
+.center {
+  text-align: center;
+}
+
+code {
+  font-family: courier;
+  color: #333;
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 34px;
+    max-width: 700px;
+  }
+  code {
+    font-size: 20px;
+  }
+  main {
+    border: 8px solid blue;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  p {
+    font-size: 24px;
+  }
+  code {
+    font-size: 14px;
+  }
 }

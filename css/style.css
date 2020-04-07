@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background-color: #fffedc;
   font-family: 'victorian-orchid';
-  color: white;
+  color: #333333;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,15 +44,15 @@ nav {
 }
 
 a, a:visited, a:active {
-  color: yellow;
+  color: blue;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px dashed yellow;
+  border-bottom: 1px dashed blue;
 }
 
 a:hover {
-  color: gold;
-  border-color: gold;
+  color: darkblue;
+  border-color: darkblue;
 }
 
 header {
@@ -149,11 +149,11 @@ p {
   max-width: 960px;
   line-height: 88px;
   font-weight: 400;
-  color: white;
+  color: #333333;
 }
 
 p em {
-  color: cyan;
+  color: black;
   border-bottom: 1px dashed #333;
 }
 
@@ -166,7 +166,7 @@ header, article, section {
 
 code {
   font-family: courier;
-  color: #333;
+  color: #CCCCCC;
   font-size: 32px;
 }
 
@@ -176,7 +176,7 @@ code {
 }
 
 .arrow {
-  color: magenta;
+  color: #CCCCCC;
   font-size: 64px;
 }
 

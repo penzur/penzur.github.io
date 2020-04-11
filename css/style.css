@@ -59,6 +59,7 @@ a:visited {
 .big {
   font-size: 100px;
   opacity: 0.9;
+  letter-spacing: 5px;
 }
 
 .big small {
@@ -76,6 +77,10 @@ a:visited {
 
 .mute {
   opacity: 0.5;
+}
+
+.center {
+  text-align: center;
 }
 
 @media only screen and (max-width: 468px) {

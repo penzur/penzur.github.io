@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: #ecec83;
+  background-color: lightgrey;
   color: black;
   letter-spacing: 1px;
   font-smooth: grayscale;
@@ -54,6 +54,10 @@ a:visited {
   text-decoration: none;
   padding: 0.2em;
   border-bottom: 1px dashed blue;
+}
+a:hover {
+  color: darkblue;
+  border-color: darkblue;
 }
 
 .big {

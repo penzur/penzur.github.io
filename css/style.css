@@ -34,9 +34,24 @@ ol {
   padding-left: 100px;
   font-size: 24px;
   opacity: 0.8;
+  list-style: none;
+  counter-reset: li;
+  position: relative;
 }
+
+ol > li::before {
+  content: counter(li) ".";
+  counter-increment: li;
+  display: inline-block;
+  position: absolute;
+  color: #aaa;
+  top: 1px;
+  left: -54px;
+}
+
 ol li {
   line-height: 1.3em;
+  position: relative;
 }
 ul {
   padding-left: 50px;
@@ -96,6 +111,11 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+.out {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 468px) {

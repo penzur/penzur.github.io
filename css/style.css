@@ -95,6 +95,7 @@ a:hover {
   opacity: 0.3;
   font-size: 64px;
   letter-spacing: normal;
+  font-weight: normal;
 }
 
 .code {

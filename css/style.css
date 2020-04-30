@@ -16,14 +16,14 @@ body {
   font-smooth: grayscale;
 }
 
-main {
+main.flex {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-content {
+main.flex content {
   padding: 32px;
   box-sizing: border-box;
   max-width: 720px;

@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5ff;
+  font-size: 20px;
+  line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-bottom: 32px;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 32px;
+}
+
+p {
+  font-family: courier;
+  letter-spacing: 0.5px;
+}
+
+p > code {
+  padding: 0px 6px;
+  background-color: #ffff002b;
+  border: 1px solid gold;
+}
+
+header {
+  height: 88px;
+  position: relative;
+  overflow: visible;
+}
+
+pre {
+  white-space: normal;
+  padding: 32px;
+  font-size: 16px;
+  border: 1px dashed #00000033;
+  margin-bottom: 32px;
+}
+
+code {
+  white-space: pre;
+  opacity: 0.75;
+  font-family: courier;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 32px;
+  overflow: visible;
+  border-left: 8px solid #cccccc;
+}
+
+blockquote:after {
+  content: "- " attr(o);
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  font-family: courier;
+  opacity: 0.7;
+  right: 20px;
+  letter-spacing: 1px;
+  bottom: -32px;
+}
+
+a,
+a:active,
+a:visited {
+  color: blue;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed blue;
+}
+a:hover {
+  color: darkblue;
+  border-bottom-color: darkblue;
+}
+
+/**
+ * classes and shit
+ */
+ol.main {
+  font-family: courier;
+  margin-top: 2em;
+  padding-left: 50px;
+  font-size: 24px;
+  opacity: 0.8;
+  list-style: none;
+  counter-reset: li;
+  position: relative;
+}
+
+ol.main li {
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
+  padding-left: 64px;
+}
+
+ol.main li a {
+  border: 0;
+}
+
+ol.main li::before {
+  font-weight: normal;
+  font-size: 16px;
+  content: attr(date);
+  counter-increment: li;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  opacity: 0.5;
+  left: -54px;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.flexmid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 256px;
+}
+
+a.logo,
+a.logo:active,
+a.logo:visited {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: -3px;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.mute {
+  opacity: 0.5;
+}

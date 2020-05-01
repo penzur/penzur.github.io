@@ -40,6 +40,7 @@ p {
 
 p {
   font-family: courier;
+  font-size: 20px;
 }
 
 p > code {

@@ -12,13 +12,13 @@ body {
 
 body {
   background-color: #f5f5ff;
-  font-size: 20px;
+  font-https://www.youtube.com/watch?v=iTOKRWgjOlgsize: 20px;
   line-height: 32px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
+main {https://www.youtube.com/watch?v=iTOKRWgjOlg
   padding-bottom: 32px;
 }
 
@@ -40,7 +40,6 @@ p {
 
 p {
   font-family: courier;
-  letter-spacing: 0.5px;
 }
 
 p > code {
@@ -154,6 +153,10 @@ ol.main li::before {
   align-items: center;
   justify-content: center;
   min-height: 256px;
+}
+
+.flexmid.mute p {
+  font-size: 16px;
 }
 
 a.logo,

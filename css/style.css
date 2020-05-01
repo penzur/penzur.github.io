@@ -32,7 +32,7 @@ main.flex content {
 ol {
   margin-top: 2em;
   padding-left: 100px;
-  font-size: 24px;
+  font-size: 20px;
   opacity: 0.8;
   list-style: none;
   counter-reset: li;
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .big {
-  font-size: 100px;
+  font-size: 88px;
   opacity: 0.9;
   color: black;
   letter-spacing: -6px;
@@ -96,7 +96,7 @@ a:hover {
 
 .big small {
   opacity: 0.5;
-  font-size: 64px;
+  font-size: 54px;
   letter-spacing: normal;
   font-weight: normal;
 }
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .sub {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .mute {
@@ -124,21 +124,28 @@ a:hover {
 
 @media only screen and (max-width: 468px) {
   .big {
-    font-size: 40px;
+    font-size: 64px;
   }
   .big small {
-    font-size: 18px;
+    font-size: 32px;
   }
   content {
     max-width: 400px;
     padding: 20px;
   }
   .sub {
-    font-size: 16px;
+    font-size: 20px;
   }
   ul,
   ol {
-    font-size: 12px;
-    padding-left: 44px;
+    font-size: 18px;
+    padding-left: 36px;
+  }
+  ol > li::before {
+    left: -32px;
+  }
+  ul,
+  p {
+    margin-bottom: 16px;
   }
 }

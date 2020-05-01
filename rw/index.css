@@ -61,6 +61,7 @@ pre {
   font-size: 16px;
   border: 1px dashed #00000033;
   margin-bottom: 32px;
+  overflow-y: scroll;
 }
 
 code {
@@ -94,7 +95,7 @@ a:visited {
   color: blue;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px dashed blue;
+  border-bottom: 1px solid blue;
 }
 a:hover {
   color: darkblue;
@@ -108,7 +109,7 @@ ol.main {
   font-family: courier;
   margin-top: 2em;
   padding-left: 50px;
-  font-size: 24px;
+  font-size: 20px;
   opacity: 0.8;
   list-style: none;
   counter-reset: li;
@@ -117,25 +118,23 @@ ol.main {
 
 ol.main li {
   position: relative;
-  margin-bottom: 16px;
+  margin-left: 50px;
   font-weight: bold;
-  padding-left: 64px;
-}
-
-ol.main li a {
-  border: 0;
+  padding: 12px;
+  border-left: 1px solid #00000033;
 }
 
 ol.main li::before {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   content: attr(date);
   counter-increment: li;
   display: inline-block;
   position: absolute;
-  top: 3px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.5;
-  left: -54px;
+  left: -94px;
 }
 
 .wrap {
@@ -170,4 +169,42 @@ a.logo:visited {
 
 .mute {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .wrap {
+    width: 320px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .flexmid {
+    min-height: 128px;
+  }
+  .flexmid p {
+    font-size: 14px;
+  }
+
+  a.logo,
+  a.logo:active,
+  a.logo:visited {
+    font-size: 32px;
+  }
 }

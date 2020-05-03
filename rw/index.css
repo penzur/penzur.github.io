@@ -126,7 +126,7 @@ ol.main li {
 
 ol.main li::before {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   content: attr(date);
   counter-increment: li;
   display: inline-block;
@@ -134,7 +134,7 @@ ol.main li::before {
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.5;
-  left: -94px;
+  left: -106px;
 }
 
 .wrap {
@@ -165,10 +165,11 @@ a.logo:active,
 a.logo:visited {
   font-size: 40px;
   font-weight: bold;
-  color: black;
+  color: blue;
   letter-spacing: -3px;
   text-decoration: none;
   border-bottom: 0;
+  margin-left: 32px;
 }
 
 .mute {
@@ -211,4 +212,5 @@ a.logo:visited {
   a.logo:visited {
     font-size: 32px;
   }
+  margin-left: 0px;
 }

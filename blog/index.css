@@ -29,7 +29,8 @@ h4,
 h5,
 h6,
 p {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
 }
 
 p {
@@ -89,7 +90,6 @@ a:visited {
   color: blue;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid blue;
 }
 a:hover {
   color: darkblue;

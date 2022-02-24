@@ -106,6 +106,9 @@ a:hover {
 .code {
   font-family: "Eingrantch Mono";
 }
+h1 small.code {
+  font-family: courier;
+}
 
 .sub {
   font-size: 26px;
